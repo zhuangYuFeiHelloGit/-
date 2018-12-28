@@ -117,7 +117,7 @@ public class TestLinked {
     @Test
     public void testDelFromEnd(){
         SingleLinked<String> singleLinked = prepareData();
-        singleLinked.removeAtFromEnd(0);
+        singleLinked.removeAtFromEnd2(6);
         singleLinked.show();
     }
 

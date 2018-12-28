@@ -238,6 +238,34 @@ public class SingleLinked<E> {
 
     }
 
+    public void removeAtFromEnd2(int n) {
+        if (n <= 0) {
+            throw new UnsupportedOperationException("n必须大于0");
+        }
+        int length = 0;
+        Node<E> temp = this.first;
+        while (temp != null) {
+            temp = temp.getNext();
+            length++;
+        }
+
+        if(n > length){
+            throw new LinkedOutOfBoundsException();
+        }
+        int target = length - n;
+
+        Node<E> again = this.first;
+        if(target == 0){
+            //要移除第一个
+            this.first = again.getNext();
+        }
+        while (target > 1) {
+            again = again.getNext();
+            target--;
+        }
+        again.setNext(again.getNext().getNext());
+    }
+
     /**
      * 使用快慢指针即可拿到中间结点
      * 快指针比慢指针多走一步即可
