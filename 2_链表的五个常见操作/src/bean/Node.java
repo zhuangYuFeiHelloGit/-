@@ -22,6 +22,10 @@ public class Node<T> {
         this.next = next;
     }
 
+    public Node(Node<T> next) {
+        this.next = next;
+    }
+
     public T getT() {
         return t;
     }

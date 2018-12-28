@@ -1,5 +1,5 @@
 import bean.Node;
-import exception.NullLinkedException;
+import exception.CannotControlException;
 import exception.UnorderedLinkedException;
 
 /**
@@ -20,19 +20,19 @@ public class SingleLinkedUtil {
      * @return 是升序还是降序
      */
     public static int isOrderLinked(SingleLinked<Integer> linked){
-        Node<Integer> realHead = linked.getFirst().getNext();
-        if(realHead == null){
+        Node<Integer> first = linked.getFirst();
+        if(first == null){
             return NULL_LINKED;
         }
 
-        Node<Integer> next = realHead.getNext();
+        Node<Integer> next = first.getNext();
 
         //0 表示升序
         //1 表示返序
         int flag = UNORDERED;
 
         while (next != null){
-            if(next.getT() >= realHead.getT()){
+            if(next.getT() >= first.getT()){
                 //大于 则 flag 为0
 
                 if(flag == UNORDERED){
@@ -44,7 +44,7 @@ public class SingleLinkedUtil {
                         //说明不是一个有序链表
                         return UNORDERED;
                     }else {
-                        realHead = next;
+                        first = next;
                         next = next.getNext();
                     }
                 }
@@ -56,7 +56,7 @@ public class SingleLinkedUtil {
                     if(flag != DES){
                         return UNORDERED;
                     }else {
-                        realHead = next;
+                        first = next;
                         next = next.getNext();
                     }
                 }
@@ -84,6 +84,7 @@ public class SingleLinkedUtil {
         if(aOrder != UNORDERED && bOrder != UNORDERED){
             if(aOrder != bOrder){
                 //说明两者的排序方式不一样
+                throw new CannotControlException();
             }else {
 
                 if(aOrder == ASC){
@@ -142,12 +143,21 @@ public class SingleLinkedUtil {
     private static Node<Integer> mergeDES(Node<Integer> nodeA,Node<Integer> nodeB){
         Node<Integer> result;
 
+        if(nodeA == null){
+            return nodeB;
+        }
+
+        if(nodeB == null){
+            return nodeA;
+        }
+
         if(nodeA.getT() > nodeB.getT()){
             result = nodeA;
-            result.setNext(mergeASC(nodeA.getNext(),nodeB));
+
+            result.setNext(mergeDES(nodeA.getNext(),nodeB));
         }else {
             result = nodeB;
-            result.setNext(mergeASC(nodeB.getNext(),nodeA));
+            result.setNext(mergeDES(nodeA,nodeB.getNext()));
         }
 
         return result;
