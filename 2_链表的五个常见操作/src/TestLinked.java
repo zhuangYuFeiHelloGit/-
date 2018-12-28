@@ -122,6 +122,16 @@ public class TestLinked {
     }
 
     /**
+     * 测试：删除链表倒数第 n 个结点
+     */
+    @Test
+    public void testDelFromEnd2(){
+        SingleLinked<String> singleLinked = prepareData();
+        singleLinked.removeAtFromEnd2(6);
+        singleLinked.show();
+    }
+
+    /**
      * 测试：获得链表的中间结点
      */
     @Test

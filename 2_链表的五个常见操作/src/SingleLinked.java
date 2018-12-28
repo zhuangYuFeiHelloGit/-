@@ -210,7 +210,7 @@ public class SingleLinked<E> {
         Node<E> beforeFirst = new Node<>();
         beforeFirst.setNext(first);
 
-        //现在快慢指针都在 -1 位置呢（如果假设头结点为 0 ）
+        //现在快慢指针都在 0 位置呢（如果假设头结点为 1 ）
         Node<E> fast = beforeFirst;
         Node<E> slow = beforeFirst;
 
