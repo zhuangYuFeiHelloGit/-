@@ -2,22 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="de274858-33da-4de6-a87b-dae84b4ce36d" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/exception/CannotControlException.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/exception/LinkedOutOfBoundsException.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/exception/UnsupportedOperateException.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/2_链表的五个常见操作/TestSort.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/2_链表的五个常见操作/exception/NullLinkedException.class" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/TestSort.java" afterPath="$PROJECT_DIR$/src/TestLinked.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/exception/NullLinkedException.java" afterPath="$PROJECT_DIR$/src/exception/EmptyLinkedException.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/2_链表的五个常见操作/Main.class" afterPath="$PROJECT_DIR$/out/production/2_链表的五个常见操作/Main.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/2_链表的五个常见操作/SingleLinked.class" afterPath="$PROJECT_DIR$/out/production/2_链表的五个常见操作/SingleLinked.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/2_链表的五个常见操作/SingleLinkedUtil.class" afterPath="$PROJECT_DIR$/out/production/2_链表的五个常见操作/SingleLinkedUtil.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/2_链表的五个常见操作/bean/Node.class" afterPath="$PROJECT_DIR$/out/production/2_链表的五个常见操作/bean/Node.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Main.java" afterPath="$PROJECT_DIR$/src/Main.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/SingleLinked.java" afterPath="$PROJECT_DIR$/src/SingleLinked.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/SingleLinkedUtil.java" afterPath="$PROJECT_DIR$/src/SingleLinkedUtil.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/bean/Node.java" afterPath="$PROJECT_DIR$/src/bean/Node.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -392,7 +377,7 @@
       <option name="presentableId" value="Default" />
       <updated>1545896365645</updated>
       <workItem from="1545896367101" duration="9236000" />
-      <workItem from="1545982861871" duration="12518000" />
+      <workItem from="1545982861871" duration="12789000" />
     </task>
     <servers />
   </component>
@@ -429,7 +414,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="21754000" />
+    <option name="totallyTimeSpent" value="22025000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="48" y="23" width="1232" height="777" extended-state="6" />
